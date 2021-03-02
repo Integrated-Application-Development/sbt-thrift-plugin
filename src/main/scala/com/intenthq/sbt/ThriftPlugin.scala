@@ -86,7 +86,6 @@ object ThriftPlugin extends AutoPlugin {
       if (thriftJsEnabled.value)
         Def.task {
           compileThrift(thriftSourceDir.value, thriftJsOutputDir.value, thrift.value, "js", thriftJsOptions.value, streams.value.log, streams.value.cacheDirectory / "thrift-js")
-          Seq.empty[File]
         }
       else
         Def.task {
@@ -100,7 +99,6 @@ object ThriftPlugin extends AutoPlugin {
       if (thriftRubyEnabled.value)
         Def.task {
           compileThrift(thriftSourceDir.value, thriftRubyOutputDir.value, thrift.value, "rb", thriftRubyOptions.value, streams.value.log, streams.value.cacheDirectory / "thrift-rb")
-          Seq.empty[File]
         }
       else
         Def.task {
@@ -114,7 +112,6 @@ object ThriftPlugin extends AutoPlugin {
       if (thriftPythonEnabled.value)
         Def.task {
           compileThrift(thriftSourceDir.value, thriftPythonOutputDir.value, thrift.value, "py", thriftPythonOptions.value, streams.value.log, streams.value.cacheDirectory / "thrift-py")
-          Seq.empty[File]
         }
       else
         Def.task {
@@ -128,7 +125,6 @@ object ThriftPlugin extends AutoPlugin {
       if (thriftDelphiEnabled.value)
         Def.task {
           compileThrift(thriftSourceDir.value, thriftDelphiOutputDir.value, thrift.value, "delphi", thriftDelphiOptions.value, streams.value.log, streams.value.cacheDirectory / "thrift-delphi")
-          Seq.empty[File]
         }
       else
         Def.task {

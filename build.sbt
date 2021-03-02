@@ -4,7 +4,7 @@ lazy val root = (project in file("."))
     sbtPlugin := true,
     organization := "com.intenthq.sbt",
     name := "sbt-thrift-plugin",
-    version := "1.1.1-SNAPSHOT",
+    version := "1.1.2-SNAPSHOT",
     scalaVersion := "2.12.8",
     scalacOptions ++= Seq("-deprecation", "-feature"),
 
