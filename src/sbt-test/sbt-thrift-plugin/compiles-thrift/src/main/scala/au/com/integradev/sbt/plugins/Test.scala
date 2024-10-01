@@ -1,4 +1,4 @@
-package com.intenthq.sbt.thrift
+package au.com.integradev.sbt.plugins
 
 class Test {
   def main(args: Array[String]): Unit = {

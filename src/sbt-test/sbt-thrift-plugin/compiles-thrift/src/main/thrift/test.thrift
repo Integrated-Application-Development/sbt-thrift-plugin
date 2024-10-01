@@ -1,4 +1,4 @@
-namespace * com.intenthq.sbt.thrift
+namespace * au.com.integradev.sbt.thrift
 
 enum SomeEnum {
   VALUE_A,
